@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Become Coder</title>
+    </head>
+    <body>
+        <p id1 = 'demo'></p>
+        <script>
+            // var arr = [1,2,3,4,5]
+            // arr.push(6)
+            // arr.pop()
+            // arr.shift()
+            // arr.length()
+
+            //     function name() {
+            //         alert("Hello")
+            //     }
+            // name()
+
+            // const students = () =>{}
+            // students()
+            
+            var numbers = [
+                {
+                    name: "Praveen",
+                    age:"19",
+                    id:"4220"
+                },
+                {
+                    name:"coder",
+                    age:"20",
+                    id:"4205"
+                },
+                {
+                    name:"reddy",
+                    age:"20",
+                    id:"4205"
+                }
+            ]
+            //document.write(numbers[0].name)
+
+            numbers.map((ele)=>{
+                document.write(ele.name)
+                document.getElementById('demo').innerHTML = ele.name
+            })
+
+            numbers.map((data)=>{
+                document.write(data.name)
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-spacing: 2px;
+            }
+            th,td{
+                padding:15px;
+                border-color: blue;
+                border-style:dashed;
+            }
+            th{
+                text-align: center;
+            }
+            td{
+                text-align: right;
+            }
+            tr:nth-child(even){
+                background-color: gray;
+            }
+            td:nth-child(even),th:nth-child(even){
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;text-align: center;">
+            <caption>Names1</caption>
+            <tr>
+                <th>Name1</th>
+                <td>Praveen</th>
+                <td>Reddy</th>
+                <td>PraWin</td>
+            </tr>
+            <tr>
+                <th>Name2</td>
+                <td>Yamini</td>
+                <td>Yamine</td>
+                <td>Rowdy</td>
+            </tr>
+            <tr>
+                <th>Name3</th>
+                <td>Hi</td>
+                <td>Hlo</td>
+                <td>Hai</td>
+            </tr>
+            <tr>
+                <th>Name4</th>
+                <td>Bye</td>
+                <td>Good Bye</td>
+                <td>Tata</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <caption>Names2</caption>
+            <tr>
+                <th colspan="2">Name</td>
+                <th>Age</td>
+            </tr>
+            <tr>
+                <td>Praveen</td>
+                <td>Reddy</td>
+                <td>PraWin</td>
+            </tr>
+            <tr>
+                <td>Yamini</td>
+                <td>Yamine</td>
+                <td>Rowdy</td>
+            </tr>
+            <hr>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>PraWin</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Phn</th>
+                    <td>7997442758</td>
+                </tr>
+                <tr>
+                    <td>8186993474</td>
+                </tr>
+            </table>
+        </table>
+    </body>
+</html>
